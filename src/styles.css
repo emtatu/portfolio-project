@@ -57,9 +57,11 @@ h3 {
   color: white;
 }
 
-.email-link:hover {
-  text-decoration: underline;
+.media-contact {
+  padding: 15%;
+  color: black;
 }
+
 @media (max-width: 576px) {
   h1 {
     text-align: center;
