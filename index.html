@@ -10,41 +10,45 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/styles.css">
 
     <title>Frontend dev portrfolio</title>
 </head>
 
+
+
 <body>
-
-    <body>
-        <nav class="navbar navbar-expand-lg fixed-top justify-content-end navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="/portfolio-project/index.html">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-project/about.html">About </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-project/work.html">My Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-project/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-end navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/portfolio-project/index.html">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <main>
+    <main>
+        <div>
             <h2>👋 Hi I am</h2>
             <h1>Emilia Tatu</h1>
             <h3>🗺 Front-end developer, based in Belgium</h3>
@@ -53,21 +57,64 @@
                     get started</a>
                 <br>
 
+
+            </div>
+        </div>
+
+
+
+        <div class="row media-contact ">
+            <div class="col-12 ">
+
+                <a style="color: #6C63FF" href="mailto:emi.tatu36@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a class="m-5" style="color: #6C63FF" href="https://www.linkedin.com/in/emiliatatu"><i
+                        class="fab fa-linkedin"></i></a>
+                <a style="color: #6C63FF" href="https://github.com/emtatu"><i class="fab fa-github"></i></a>
             </div>
 
-            <div class="row media-contact">
-                <div class="col-4 ">
-                    <a href="mailto:emi.tatu36@gmail.com" class="far fa-envelope"></a>
+        </div>
+        <div>
+            <h4>
+                Featured projects which are my best project choice
+            </h4>
+
+
+        </div>
+        <div>
+            <div class="row text-center">
+                <div class="col-6">
+                    <h3>my yogurt project</h3>
 
                 </div>
-                <div class="col-4">
-                    <a href="https://www.linkedin.com/in/emiliatatu" class="fab fa-linkedin"></a>
-                </div>
-                <div class="col-4">
-                    <a class="fab fa-github" href="https://github.com/emtatu"></a>
+                <div class="col-6">
+                    <img src="/images/yogurt.png" class="img-fluid img-thumbnail rounded mt-5" alt="">
                 </div>
             </div>
-        </main>
-    </body>
+            <div class="row">
+
+                <div class="col-6">
+                    <img src="/images/yoga.png" class="img-fluid img-thumbnail rounded mt-5" alt="">
+                </div>
+                <div class="col-6 ">
+                    <h3>my yoga project</h3>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h3>my weather app</h3>
+
+                </div>
+                <div class="col-6">
+                    <img src="/images/weather-app.png" class="img-fluid img-thumbnail rounded mt-5" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+</body>
 
 </html>
