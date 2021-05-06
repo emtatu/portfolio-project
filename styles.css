@@ -81,9 +81,21 @@ P {
   text-align: center;
   line-height: 27px;
 }
+.languages ul,
+.skills-tools ul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  list-style-type: none;
+}
+main .languages-skills-bg {
+  background: #f9f7fe;
+  border-radius: 10px;
+}
 
 .navigation-link-index .btn,
-footer .contact-btn {
+footer .contact-btn,
+.work-link,
+main .about-me .btn-projects {
   background: var(--btn-color);
   margin-top: 5%;
   box-shadow: var(--box-shadow);
@@ -138,6 +150,6 @@ footer .my-email a {
   }
   footer .contact {
     text-align: center;
-    width: 400px;
+    width: 350px;
   }
 }
