@@ -6,6 +6,8 @@
 
 body {
   overflow-x: hidden;
+  padding-bottom: 20px;
+  margin: 10px;
 }
 .hero {
   width: 100vw;
@@ -64,6 +66,7 @@ h3 {
   padding: 25px;
   font-size: 24px;
   opacity: 0.7;
+  text-align: center;
   padding-bottom: 20px;
   font-family: "Poppins", sans-serif;
 }
@@ -86,14 +89,11 @@ main h2 {
 
 main h3 {
   font-size: 24px;
-  opacity: 0.7;
-
-  font-family: "Poppins", sans-serif;
 }
 P {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 400px;
   text-align: center;
   line-height: 27px;
 }
@@ -110,13 +110,32 @@ main .languages-skills-bg {
 
 .navigation-link-index .btn,
 footer .contact-btn,
-.work-link,
 main .about-me .btn-projects {
   background: var(--btn-color);
   margin-top: 5%;
   box-shadow: var(--box-shadow);
   color: white;
   text-decoration: none;
+}
+
+.learn-more,
+.btn-view-projects {
+  text-decoration: none;
+  margin: 1px solid;
+  text-align-last: ;
+  padding: 15px;
+  margin: 5%;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 5%;
+}
+.app-description {
+  line-height: 1.5;
+  font-size: 14px;
+}
+.logo {
+  width: 50px;
+  line-height: 10px;
 }
 footer .contact {
   width: 600px;
@@ -138,11 +157,6 @@ footer .my-email a {
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--btn-color);
-  box-shadow: var(--box-shadow);
-  color: white;
 }
 
 .media-contact {
@@ -150,19 +164,35 @@ footer .my-email a {
   text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
   h1 {
+    text-align: center;
+  }
+  main .container-index {
     text-align: center;
   }
 
   body,
   main {
+    margin-top: 20px;
+    padding-block-start: 10%;
     background-color: var(--secondary-color);
-    padding: 10px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  main h1,
+  .hero h1 .work h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 10;
+  }
+  main .container-index {
     text-align: center;
   }
-  p {
-    text-align: right;
+  .btn-projects {
+    text-align: center;
   }
   footer .contact {
     text-align: center;
