@@ -23,7 +23,7 @@ body {
 }
 main {
   margin: 60px auto;
-  max-width: 800px;
+  max-width: 900px;
   font-size: medium;
   text-align: center;
   padding: 50px;
@@ -139,7 +139,9 @@ footer p {
 }
 .app-description {
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.9;
 }
 .logo {
   width: 50px;
@@ -172,7 +174,7 @@ footer .my-email a {
   padding: 35px;
   text-align: center;
 }
-. @media (max-width: 900px) {
+. @media (max-width: 950px) {
   .hero h1 {
     padding: 10px;
     font-size: 40px;
