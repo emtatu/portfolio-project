@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="She uses React JS and JavaScript to code her apps">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-        </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -20,27 +17,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@100;300&display=swap"
         rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <title>About Emilia & her work</title>
+
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="/images/logo.png" class="logo" alt="et logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <a class="navbar-brand" href="/index.html"><img class="logo" src="/images/logo.png" alt="et logo"></a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class=" nav collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="/index.html" title="Homepage">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" title="About Emilia">About </a>
+                        <a class="nav-link active" href="/about.html" title="About Emilia">About </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/work.html" title="Emilia´s work">My Work</a>
+                        <a class="nav-link" href="#" title="Emilia´s work"></a>
                     </li>
 
                 </ul>
@@ -51,110 +60,16 @@
 
     <main class="container">
         <div class="about-me pt-5 pb-3">
-            <h3> A bit about me &</h3>
-            <div class="row  ">
+            <p>Learn more about my prof. experience </p>
 
-                <h1 class="text-center pt-2 pb-1"> my work </h1>
-                <div class="text-center col d-none d-md-block ">
-                    <img src="/images/undraw_Dev_focus_re_6iwt.png" class="img-fluid img-thumbnail rounded mt-5"
-                        alt="picture_dev">
-                </div>
-                <div class="text-center col  mt-4">
+            <h3 class="about-me pt-5 pb-3  ">Let me know your thoughts!</h3>
+            <h5 class="about-me pt-3 pb-5"> My CV is available as <strong>download </strong> or <strong>print</strong>
+                📑 </h5>
 
-
-                    <p class="text-center mt-3 app-description"> Hello, I am Emilia 🖐 and working as Frontend developer
-                        based
-                        in Belgium⛅
-                        <br />
-
-                        My
-                        interest for
-                        coding started and advanced during to the COVID19 & it´s lockdowns. As time passed, I spend more
-                        time at home, in the company of my
-                        dog and decided to focus on creativity & develop my skills. So I
-                        learned how to build diverse Apps using & learning ReactJS and JavaScript 👩‍💻
-                        <br />
-
-
-                        My prof. experience is in PM, coordination and IT client solution support. I
-                        coordinated several years executive education and leadership programs after graduating a MSc
-                        in Educational Sciences at the VUB in Brussels 🎓
-                        <br />
-                        Am excited to improve my skills and develop more digital Apps & thank you for viewing my
-                        portfolio 🎆
+            <embed src="/images/Emilia Tatu resume.pdf" width="800px" height="1170px" class=" rounded " />
 
 
 
-
-
-                    </p>
-                    <div>
-                        <p>
-                            <a href=" /work.html" class=" btn btn-view-projects float-center p-3 "
-                                title="View projects">
-                                View my
-                                projects</a>
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-6 mt-5 pt-3 languages-skills-bg text-center">
-                <h5 class="mb-2">..am fluent in </h5>
-                <img class="img-fluid img-thumbnail rounded " src="/images/Code_typing_re_p8b9.png"
-                    alt=" coding-language" title="Coding languages">
-                <div class="row languages">
-
-
-                    <div class="col-12 m-3">
-
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>ReactJS</li>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>Axios</li>
-                            <li>JQuery</li>
-                            <li>API</li>
-
-
-                        </ul>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class=" skills-tools col-6 mt-5 pt-3 languages-skills-bg">
-                <h5 class="mb-2">tools I use </h5>
-                <img class="img-fluid img-thumbnail rounded " src="/images/tools_Code_thinking_re_gka2.png"
-                    alt=" coding-tools" title="Coding tools">
-
-                <div class="row">
-
-                    <div class="col-12 m-3 ">
-                        <ul>
-
-                            <li>Bootstrap</li>
-                            <li>VS Code</li>
-                            <li>Codepen</li>
-                            <li>Github</li>
-                            <li>Flexbox</li>
-                            <li>Hosting</li>
-                            <li>SEO </li>
-                            <li>Google analytics</li>
-                            <li>NPM Terminal</li>
-                            <li></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
 
         </div>
 
@@ -187,32 +102,55 @@
 
             </div>
         </div>
+        <div>
+            <div class="row ">
+                <div class="col-sm text-center pt-4 mt-3">
+                    <h3 class="p-4 m-2" id="debutant">My hobby & passion that became my débutante coding project 😅
+                    </h3>
+                    <p class="text-muted">HTML, CSS & JavaScript </p>
+                    <a
+                        href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/018/847/original/final_assignment_sheCodes.html?1589218489">
+                        <img src="/images/frencies.png" class="img-hobby img-fluid shadow-sm img-thumbnail rounded  "
+                            alt="picture_frencie" target="_blank" title="Debutant project"></a>
 
+
+                </div>
+            </div>
+
+        </div>
     </main>
 
 
 </body>
-<footer>
-    <div class="contact row text-start pt-3 mt-3">
-        <div class="col-8">
-            <h3 class="  text-center pt-3 mt-3"> Colaboration inquiry </h3>
-            <br>
-            <p class="  text-md-center "> Am available for new projects & eager to implement your vision!</p>
-        </div>
-        <div class=" contact-me-qr col-4  ">
+<footer class="pt-5 m-3">
 
-            <a href="mailto:emtatu.collaborations@gmail.com"><img class="  img-fluid  rounded shadow-sm
-                
-                 " src="/images/contactEmiliaqr.png" alt="contact_emilia" title="Scan & contact Emilia">
-            </a>
-            <i class="text-center fas fa-angle-double-up pt-2"></i>
-            <p class="contact-me-here p-1"></i>
-                Contact me
-                </i> </p>
+    <div class=" contact row text-start pt-3 mt-3 p-2">
+
+        <div class="col">
+            <h3 class="  text-center pt-3 mt-3"> Collaboration inquiry </h3>
+            <br>
+            <p class="  text-sm-center pt-2"> I am available and eager to develop your project!
+            </p>
         </div>
+        <div class=" contact-me-qr col-4 text-sm-center ">
+            <div class="p-2 d-none d-lg-block">
+                <a href="mailto:emtatu.collaborations@gmail.com"><img class="  img-fluid  rounded shadow-sm
+                
+    " src="/images/contactEmiliaqr.png" alt="contact_emilia" title="Scan & contact Emilia">
+                </a>
+                <i class=" animate__animated animate__heartBeat text-center fas fa-angle-double-up pt-2"></i>
+                <p class="contact-me-here p-1"></i>
+                    Contact me
+                    </i> </p>
+            </div>
+
+        </div>
+
+
     </div>
-    <div class=" col-12 my-email pt-5 pb-3">
-        <p class="text-center  ">
+
+    <div class=" my-email pt-5 pb-3">
+        <p class="text-center ">
             <a href="mailto:emtatu.collaborations@gmail.com"><strong>
                     emtatu.collaborations@gmail.com
                 </strong>
@@ -223,15 +161,22 @@
     <div class="row media-contact ">
         <div class="col-12 ">
 
-            <a style="color: #6C63FF" href="mailto:emtatu.collaborations@gmail.com" target="_blank" title="E-mail me"><i
-                    class="fas fa-envelope"></i></a>
-            <a class="m-5" style="color: #6C63FF" href="https://www.linkedin.com/in/emiliatatu" target="_blank"
-                title="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-            <a style="color: #6C63FF" href="https://github.com/emtatu" target="_blank" title="GitHub Account"><i
-                    class="fab fa-github"></i></a>
+            <a class="btn btn-primary" style="background-color: #9D63FF;" role="button"
+                href="mailto:emtatu.collaborations@gmail.com" target="_blank" title="E-mail me"><i
+                    class="fab fa-google"></i></a>
+
+            <a class="btn btn-primary" style="background-color: #9D63FF;" href="https://www.linkedin.com/in/emiliatatu"
+                target="_blank" role="button"><i title="LinkedIn profile" class="fab fa-linkedin-in"></i></a>
+
+            <a class="btn btn-primary" style="background-color: #9D63FF;" href="https://github.com/emtatu"
+                target="_blank" title="GitHub Account" role="button"><i class="fab fa-github"></i></a>
+
         </div>
 
     </div>
+
+
+
 </footer>
 <div>
     <p class=" text-muted text-center mt-3 mb-2 ">This project was coded by Emilia Tatu and is <a class="code-stamp"
