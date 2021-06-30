@@ -78,6 +78,7 @@ html {
   width: 100%;
   margin: 0;
 }
+
 .main {
   height: 100vh;
   align-items: center;
@@ -109,7 +110,7 @@ html {
 }
 .section2 .learn-more {
   color: white !important;
-  border: 1px solid;
+  border: 1px solid !important;
 }
 .section3 {
   margin: 20px;
@@ -117,35 +118,75 @@ html {
   padding-top: 50px;
   padding: 20px;
 }
+.break-text-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.react-icon {
+  width: 150px;
+  width: 150px;
 
+  align-items: inherit;
+}
+.rotate {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .img-memories,
 .coding-skills-img {
   margin: 30px;
   padding: 30px;
   height: 150px;
   width: 170px;
-
   align-content: center;
 }
-
 .picture {
   height: 230px;
   width: 200px;
+  padding: 2 6px;
+  padding-bottom: 25px;
+  margin: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  transition: all 800ms;
+  transform: rotate(-5deg);
 }
-
+.picture:hover {
+  width: 220px;
+  height: 250px;
+  transform: rotate(-10deg);
+}
+.img:hover {
+  opacity: 0.7;
+}
 .img-hobby {
   margin: 30px;
   padding: 30px;
   height: 300px;
   width: 400px;
-
   align-content: center;
 }
-
+.img-hobby:hover {
+  width: 380px;
+  height: 280px;
+  box-shadow: var(--box-shadow);
+}
+.certificate:hover {
+  width: 290px;
+  height: 170px;
+  box-shadow: var(--box-shadow);
+}
 .btn-index-work {
   width: 100%;
 }
-
 main {
   margin: 60px auto;
   max-width: 900px;
@@ -153,23 +194,34 @@ main {
   text-align: center;
   padding: 50px;
 }
-.work {
-  padding-top: 40px;
-  margin-top: 20px;
-}
-.work h1 {
-  font-size: 50px;
-  font-weight: 300px;
-  padding-bottom: 10px;
-  font-family: "Playfair Display", serif;
-}
-.work h3 {
-  padding: 25px;
-  font-size: 24px;
-  opacity: 0.7;
+.whatever2 {
+  width: 100vw;
   text-align: center;
-  padding-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  background-image: url(/images/img_tag_about_me.png);
+
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.whatever {
+  width: 100vw;
+  text-align: center;
+  background-image: url(/images/background_online_cv_qy9w.png);
+
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
 }
 main h1,
 h3,
@@ -182,16 +234,13 @@ h6 {
   color: black;
   font-family: "Playfair Display", serif;
 }
-
 main h2 {
   font-size: 48px;
   font-family: "Playfair Display", serif;
 }
-
 main h3 {
   font-size: 24px;
 }
-
 P {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -205,21 +254,18 @@ P {
   font-weight: 600px;
   list-style-type: none;
 }
-
 .languages-skills-bg {
   margin: 20px;
   padding: 10px;
   background: #f9f7fe;
   border-radius: 10px;
 }
-
 .navigation-link-index .btn,
 footer .contact-btn,
 main .about-me .btn-projects {
   background: var(--btn-color);
   margin-top: 5%;
   box-shadow: var(--box-shadow);
-
   color: white;
   text-decoration: none;
 }
@@ -227,24 +273,55 @@ footer p {
   font-size: 17px;
   line-height: 25px;
 }
+.learn-more {
+  text-decoration: none;
+  margin: 1px solid;
+  padding: 15px;
 
-.learn-more,
+  color: var(--btn-color) !important;
+  border: 1px solid var(--btn-color) !important;
+  border-radius: 5%;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+
 .btn-view-projects {
   text-decoration: none;
   margin: 1px solid;
   padding: 15px;
-  margin: 5%;
-  color: var(--btn-color) !important;
-  border: 1px solid var(--btn-color);
+  background-color: whitesmoke;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color) !important;
   border-radius: 5%;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+.btn-view-projects:hover {
+  border: 1px solid var(--btn-color) !important;
+  color: var(--btn-color) !important;
+}
+.app-description-about {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.9;
+  background-color: whitesmoke;
+  border-radius: 5%;
+  padding-left: 35px;
+  padding-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 .app-description {
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
   opacity: 0.9;
-}
 
+  border-radius: 5%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
 .logo {
   width: 50px;
   line-height: 10px;
@@ -267,12 +344,10 @@ footer .contact {
   font-size: medium;
   font-family: "Dancing Script", cursive;
 }
-
 footer .my-email a {
   color: black;
   text-decoration: none;
 }
-
 .homepage-link {
   color: var(--btn-color);
   text-align: center;
@@ -282,12 +357,10 @@ footer .my-email a {
   border-radius: 4px;
   padding: 20px 15px;
 }
-
 .media-contact {
   padding: 35px;
   text-align: center;
 }
-
 @media (max-width: 950px) {
   .hero h1 {
     padding: 10px;
@@ -326,7 +399,6 @@ footer .my-email a {
   main .container-index {
     text-align: center;
   }
-
   body,
   .main {
     height: 65vh;
@@ -334,9 +406,7 @@ footer .my-email a {
     text-align: center;
     margin-bottom: 10px;
   }
-
-  main h1,
-  .work h1 {
+  main h1 {
     font-size: 40px;
     margin: 0;
     padding: 10;
