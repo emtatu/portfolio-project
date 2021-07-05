@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -19,17 +19,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@100;300&display=swap"
         rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <script src="./node_modules/wowjs/dist/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+
+
+
+
+
+
 
     <title>Frontend developer - Emilia`s Portrfolio</title>
 </head>
@@ -37,35 +43,22 @@
 
 
 <body id="circle" class="circle">
-    <!-- <nav class=" navbar navbar-expand-lg fixed-top justify-content-end navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="/index.html"><img class="logo" src="/images/logo.png" alt="et logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class=" nav collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto float-end">
-                    <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="index.html" title="Homepage">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" title="About Emilia">About </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="Emilia´s work">not sure will use</a>
-                    </li>
 
-                </ul>
-            </div>
-        </div>
-    </nav> -->
+
+
+
+
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-color">
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Toggle button -->
             <a class="navbar-brand" href="/index.html"><img class="logo" src="/images/logo.png" alt="et logo"></a>
+
+
+
+
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                 data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -73,8 +66,33 @@
             </button>
 
             <div class=" nav collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto float-end">
+                <ul class="navbar-nav me-auto text-center float-end">
+                    <li class="nav-item dropdown  text-sm-center">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="united kingdom flag m-0"></i>
+                        </a>
+                        <ul class="dropdown-menu text-center collapse" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>EN
+                                </a>
+                            </li>
+
+
+
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="germany flag"></i>GE</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="france flag"></i>FR</a>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
                     <li class="nav-item">
+
                         <a class="nav-link active " aria-current="page" href="index.html" title="Homepage">Home</a>
                     </li>
                     <li class="nav-item">
@@ -84,51 +102,60 @@
                         <a class="nav-link" href="#projects" title="Emilia´s projects">Projects</a>
                     </li>
 
+
                 </ul>
             </div>
         </div>
+
         <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
     <div class="hero ">
+        <div style="position: absolute; z-index: 1; height: 100%; width: 100%;" id="particles-js"></div>
+
         <div class="me ">
+            <h1 id="myname"> Hello world!</h1>
+            <h2 class=" p-3 trnsjs">I'm Emilia</h2>
 
-            <h2>Hello world!</h2>
-            <h1> I´m Emilia Tatu</h1>
 
-            <h3>Front-end developer, based in Belgium 🌍</h3>
-            <div class="navigation-link-index">
+            <h3 class="m-2 pt-5">Front-end developer, based in Belgium 🌍</h3>
+            <div style="position: relative; z-index: 2;" class="navigation-link-index pt-3">
                 <a href="#about-me" title="Get started " class=" btn btn-projects p-3 mb-3 rounded " title="work">Let´s
                     get started</a>
                 <br>
 
 
             </div>
+
         </div>
-        <div class="row media-contact ">
-            <div class="col-12 ">
-                <a class="btn  btn-primary" style="background-color: #9D63FF;" role="button"
-                    href="mailto:emtatu.collaborations@gmail.com" target="_blank" title="E-mail me"><i
-                        class="fab fa-google"></i></a>
+        <div class="pb-5">
 
-                <a class="btn btn-primary" style="background-color: #9D63FF;"
-                    href="https://www.linkedin.com/in/emiliatatu" target="_blank" role="button"><i
-                        title="LinkedIn profile" class="fab fa-linkedin-in"></i></a>
+            <div class=" row media-contact ">
+                <div class="col-12 ">
+                    <a class="btn  btn-primary" style="background-color: #9D63FF;" role="button"
+                        href="mailto:emtatu.collaborations@gmail.com" target="_blank" title="E-mail me"><i
+                            class="fab fa-google"></i></a>
 
-                <a class="btn btn-primary" style="background-color: #9D63FF;" href="https://github.com/emtatu"
-                    target="_blank" title="GitHub Account" role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary" style="background-color: #9D63FF;"
+                        href="https://www.linkedin.com/in/emiliatatu" target="_blank" role="button"><i
+                            title="LinkedIn profile" class="fab fa-linkedin-in"></i></a>
+
+                    <a class="btn btn-primary" style="background-color: #9D63FF;" href="https://github.com/emtatu"
+                        target="_blank" title="GitHub Account" role="button"><i class="fab fa-github"></i></a>
+
+                </div>
 
             </div>
-
         </div>
+
     </div>
 
 
 
-    <main class="container whatever2">
+    <main class=" container whatever2">
         <div>
 
-            <div class="about-me pt-2 pb-3">
+            <div id="about-me" class="about-me m-5 pt-5 pb-3">
 
                 <h3 class="p-3"> A bit about me &</h3>
                 <div class="row  ">
@@ -182,79 +209,205 @@
 
         </div>
 
-        <div class="row ">
-            <div class="col mt-1 pt-3 languages-skills-bg text-center">
 
-                <img class="coding-skills-img img-fluid img-thumbnail rounded "
-                    src="./images/undraw_Dev_focus_re_6iwt.png" alt=" coding-language" title="Coding languages">
-                <h5>
-                    I am fluent in..
-
-                </h5>
-                <div class="row languages">
-
-
-                    <div class="col m-3">
-
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>ReactJS</li>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>UI/UX design</li>
-                            <li>Responsive Webdesign</li>
-                            <li>JQuery</li>
-                            <li>Flexbox</li>
-                            <li>API</li>
-                            <li>SEO </li>
-                            <li>hosting & deployment</li>
-
-
-                        </ul>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class=" skills-tools col mt-1 pt-3 languages-skills-bg">
-
-                <img class="coding-skills-img img-fluid img-thumbnail rounded " src="/images/solution_mindset_34bi.png"
-                    alt=" coding-tools" title="Coding tools">
-                <h5>Tools I use </h5>
-                <div class="row">
-
-                    <div class="col m-3 ">
-                        <ul>
-
-                            <li>Bootstrap</li>
-                            <li>VS Code</li>
-                            <li>Codepen</li>
-                            <li>Github</li>
-                            <li>Netlify</li>
-                            <li>Firebase</li>
-                            <li>Google analytics</li>
-                            <li>NPM Terminal</li>
-                            <li>Figma</li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
 
 
     </main>
+    <div id="container-hex" class="hexagon-container ">
+        <section class="intro">
 
+            <div class="intro-block">
+                <div class="centerfold-wrap">
+                    <div class="hex-master-wrap">
+                        <div class="hover-notify">Hover Me!</div>
+                        <div class="grid-1">
+                            <div class="hex-wrap frontend" data-title="FRONTEND" data-content="frontend-desc"
+                                data-color="#333333">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/front-end.png" /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hex-wrap reactjs" data-title="ReactJS" data-content="reactjs-desc"
+                                data-color="#16A085">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/hex-reactjs-img.png" /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-2">
+                            <div class="hex-wrap html" data-title="HTML5" data-content="html-desc" data-color="#E34C26">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/hex-html5.png" /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hex-wrap css" data-title="CSS3" data-content="css-desc" data-color="#0083de">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/hex-css3.png" /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hex-wrap jquery" data-title="JAVASCRIPT" data-content="javascript-desc"
+                                data-color="#8cc84b">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/hex-js.png" /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-3">
+                            <div class="hex-wrap gui" data-title=" WebDesign" data-content="ui-desc"
+                                data-color="#2C3E52">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/hex-webdesign.jpg" /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hex-wrap seo" data-title="SEO" data-content="seo-desc" data-color="#C0392B">
+                                <div class="hex-init"></div>
+                                <div class="hex-borders">
+                                    <div class="border-1"></div>
+                                    <div class="border-2"></div>
+                                    <div class="border-3"></div>
+                                </div>
+                                <div class="label"><img src="/images/hex-seo.png
+                                    " /></div>
+                                <div class="hexagon">
+                                    <div class="hex-inner-1">
+                                        <div class="hex-inner-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-display">
+                        <div class="code-description ">
+                            <div class="frontend-desc ">
+                                <p class="code-title "></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span>HTML, CSS, Javascript,
+                                    ReactJS</p>
+                                <p class="pt-3 text-start"><span>Tools</span>VS Code, NPM, GitHub </p>
+                                <p class="pt-3 text-start"><span>Hosting</span>Netlify & DeFi </p>
+
+                            </div>
+                            <div class="reactjs-desc">
+                                <p class="code-title"></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span> single-page-apps, ReactJS concepts,
+                                    Hooks, APIs
+                                </p>
+                                <p class="pt-3 text-start"><span>Tools</span>VS Code, NPM, GitHub </p>
+
+
+                            </div>
+                            <div class="html-desc">
+                                <p class="code-title"></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span>HTML5 (most recent)</p>
+                                <p class="pt-3 text-start"><span>Tools</span>VS Code, Netlify hosting & deployment,
+                                    GitHub </p>
+
+                            </div>
+                            <div class="css-desc">
+                                <p class="code-title"></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span>CSS3 (most recent), CSS variables
+                                </p>
+                                <p class="pt-3 text-start"><span>Tools</span>VS Code, MDBootstrap, Flexbox </p>
+
+                            </div>
+                            <div class="javascript-desc">
+                                <p class="code-title"></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span>Javascript, Jquery, ReactJS, NodeJS
+                                </p>
+                                <p class="pt-3 text-start"><span>Tools</span>VS Code, CodePen, APIs </p>
+
+                            </div>
+                            <div class="ui-desc">
+                                <p class="code-title"></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span>Responsive WebDesign, UI/UX design
+                                </p>
+                                <p class="pt-3 text-start"><span>Tools</span>VS Code, Console, MDBootstrap, Figma </p>
+
+                            </div>
+                            <div class="seo-desc">
+                                <p class="code-title"></p>
+
+                                <p class="pt-5 text-start "><span>Experience</span>Up-to-date SEO Practices & Google
+                                    analytics</p>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hoverblock"></div>
+                </div> <!-- End Centerfold-Wrap -->
+            </div>
+
+        </section>
+    </div>
 
     <div id="projects" class="break-text-index text-center">
-        <div class="row ">
+        <div class="row pt-4">
             <div class="col">
 
-                <h3 class="  p-2  m-2">
+                <h3 class="  pt-5  mt-5">
                     Featured project samples using ReactJS
                 </h3>
                 <img src="/images/React-icon.svg.png" alt="ReactJS icon"
@@ -471,6 +624,18 @@
         </p>
     </div>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
+    <script src="/particule.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
+
+
+    <script>
+        new WOW().init();
+    </script>
 
 
 

@@ -1,0 +1,17 @@
+{
+    strings : {
+        'id:myname': {
+            'de_DE' : 'Ick been emilia',
+            'fr_FR' : '',
+            'ro_RO' : 'Spanish translation here',
+            'en_GB' : 'British english translation here',
+        },
+        'id:myname': {
+            'de_DE' : 'Ick been emilia',
+            'fr_FR' : '',
+            'ro_RO' : 'Spanish translation here',
+            'en_GB' : 'British english translation here',
+        },
+        
+    }
+}
