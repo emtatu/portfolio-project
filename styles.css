@@ -23,7 +23,6 @@ body {
   background-image: url(./images/bg-img.jpg);
   background-repeat: no-repeat;
   vertical-align: top;
-  height: 810px;
 
   background-position: 50% 50%;
   background-size: 100%;
@@ -91,26 +90,16 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.section2 {
-  background-image: linear-gradient(
-    to top,
-    #dbdcd7 0%,
-    #dddcd7 24%,
-    #e2c9cc 30%,
-    #e7627d 46%,
-    #b8235a 59%,
-    #801357 71%,
-    #3d1635 84%,
-    #1c1a27 100%
-  );
+.section1 {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
-.section2 h3 {
+.section1 h3 {
   color: white;
 }
-.section2 p {
+.section1 p {
   color: white;
 }
-.section2 .learn-more {
+.section1 .learn-more {
   color: white !important;
   border: 1px solid !important;
 }
@@ -124,6 +113,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 50px;
+  margin-top: 4%;
+  padding-bottom: 0%;
 }
 .react-icon {
   width: 150px;
@@ -143,13 +135,50 @@ html {
     transform: rotate(359deg);
   }
 }
-.img-memories,
+
 .coding-skills-img {
   margin: 30px;
   padding: 30px;
   height: 150px;
   width: 170px;
   align-content: center;
+}
+.section3 {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  width: 100vw;
+}
+.container-memories {
+  box-shadow: var(--box-shadow);
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+
+  color: var(--btn-color);
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-top: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-memories {
+  margin: 10px;
+  border: 10px solid;
+  border-color: whitesmoke;
+
+  padding: 30px;
+  height: 270px;
+  width: 2030px;
+  align-content: center;
+}
+.img-memories:hover {
+  opacity: 0.7;
 }
 .picture {
   height: 240px;
@@ -225,6 +254,10 @@ main {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
+}
+.intro-cv {
+  padding-top: 40px;
+  margin-top: 30px;
 }
 main h1,
 h3,
@@ -763,8 +796,7 @@ body .hexagon {
   transform: rotate(60deg);
 }
 .navigation-link-index .btn,
-footer .contact-btn,
-main .about-me .btn-projects {
+main .btn-projects {
   background: var(--btn-color);
   margin-top: 5%;
   box-shadow: var(--box-shadow);
@@ -839,6 +871,10 @@ footer .contact {
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 5%;
+  box-shadow: var(--box-shadow);
+}
+footer .contact:hover {
+  width: 480px;
 }
 .contact-me-qr {
   justify-content: center;
@@ -862,6 +898,10 @@ footer .my-email a {
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
+}
+.code-stamp {
+  text-decoration: underline;
+  color: #1c1a27;
 }
 .media-contact {
   padding: 35px;
