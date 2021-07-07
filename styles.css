@@ -10,7 +10,12 @@ body {
   padding-bottom: 20px;
   margin: 10px;
 }
-
+.nav-transparent {
+  background: transparent;
+  position: absolute;
+  width: 100vw;
+  z-index: 9;
+}
 .nav ul {
   display: flex;
   justify-content: flex-end;
@@ -91,7 +96,7 @@ html {
   align-items: center;
 }
 .section1 {
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
 }
 .section1 h3 {
   color: white;
@@ -147,6 +152,10 @@ html {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   width: 100vw;
 }
+.container {
+  width: 100%;
+  height: 100%;
+}
 .container-memories {
   box-shadow: var(--box-shadow);
   background-image: linear-gradient(
@@ -173,8 +182,7 @@ html {
   border-color: whitesmoke;
 
   padding: 30px;
-  height: 270px;
-  width: 2030px;
+
   align-content: center;
 }
 .img-memories:hover {
@@ -290,11 +298,7 @@ P {
   font-weight: 600px;
   list-style-type: none;
 }
-.languages-skills-bg {
-  margin: 20px;
-  padding: 10px;
-  background: #f9f7fe;
-  border-radius: 10px;
+
 }
 .hexagon-container {
   font-family: "Oswald", sans-serif;
@@ -795,13 +799,28 @@ body .hexagon {
   content: "";
   transform: rotate(60deg);
 }
-.navigation-link-index .btn,
-main .btn-projects {
+.navigation-link-index .btn {
   background: var(--btn-color);
   margin-top: 5%;
   box-shadow: var(--box-shadow);
   color: white;
   text-decoration: none;
+}
+.btn-view-cv{
+  color: var(--btn-color) !important;
+  border: 1px solid var(--btn-color) !important;
+  border-radius: 5%;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+}
+}
+.btn-download-cv {
+  background: var(--btn-color) !important;
+  margin-top: 5%;
+  box-shadow: var(--box-shadow) !important;
+  color: white!important;
+  
 }
 
 footer p {
@@ -873,9 +892,7 @@ footer .contact {
   border-radius: 5%;
   box-shadow: var(--box-shadow);
 }
-footer .contact:hover {
-  width: 480px;
-}
+
 .contact-me-qr {
   justify-content: center;
   flex-direction: column;
@@ -925,26 +942,46 @@ footer .my-email a {
     padding-bottom: 30px;
     font-family: "Poppins", sans-serif;
   }
+  
+  
+   
   footer p {
     font-size: 13px;
     line-height: 15px;
   }
-  .contact-btn,
-  .btn-projects {
-    background: var(--btn-color);
-    margin-top: 5%;
+
+  .whatever h5 {
+    font-size: 17px;
+    text-align: center !important;
+  }
+  .certificate:hover {
+    width: 100px;
+    height: 80px;
     box-shadow: var(--box-shadow);
-    color: white;
+  }
+  .contact-btn,
+  .btn-projects,
+  .btn-view-cv {
+    background: var(--btn-color) !important;
+    margin-top: 5%;
+    box-shadow: var(--box-shadow) !important;
+    color: white !important;
     text-decoration: none;
     font-size: 12px;
     line-height: 15px;
+    text-align: center;
+  }
+
+  .section3 {
+    align-items: center;
+  }
+  .container-memories {
+    display: none;
   }
   h1 {
     text-align: center;
   }
-  main .container-index {
-    text-align: center;
-  }
+
   body,
   .main {
     height: 65vh;
@@ -952,6 +989,7 @@ footer .my-email a {
     text-align: center;
     margin-bottom: 10px;
   }
+
   main h1 {
     font-size: 40px;
     margin: 0;
