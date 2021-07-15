@@ -23,12 +23,11 @@ body {
 }
 
 .hero {
-  width: 100vw;
-  text-align: center;
   background-image: url(./images/bg-img.jpg);
   background-repeat: no-repeat;
   vertical-align: top;
-
+  width: 100vw;
+  text-align: center;
   background-position: 50% 50%;
   background-size: 100%;
   background-color: transparent;
@@ -86,34 +85,16 @@ html {
 }
 
 .main {
-  height: 100vh;
+  width: 100%;
+
   align-items: center;
-  display: flex;
 }
 .main .col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section1 {
-  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
-}
-.section1 h3 {
-  color: white;
-}
-.section1 p {
-  color: white;
-}
-.section1 .learn-more {
-  color: white !important;
-  border: 1px solid !important;
-}
-.section3 {
-  margin: 20px;
-  margin-top: 2%;
-  padding-top: 50px;
-  padding: 20px;
-}
+
 .break-text-index {
   display: flex;
   flex-direction: column;
@@ -141,16 +122,21 @@ html {
   }
 }
 
-.coding-skills-img {
-  margin: 30px;
-  padding: 30px;
-  height: 150px;
-  width: 170px;
-  align-content: center;
-}
-.section3 {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+.bg-projects {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   width: 100vw;
+  padding-bottom: 20px;
+}
+
+.section1 {
+  padding-top: 20px;
+  background-image: url(./images/bg-abstract-orange.jpg);
+  border-image-repeat: none;
+
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 30px;
 }
 .container {
   width: 100%;
@@ -158,18 +144,13 @@ html {
 }
 .container-memories {
   box-shadow: var(--box-shadow);
-  background-image: linear-gradient(
-    to top,
-    #dad4ec 0%,
-    #dad4ec 1%,
-    #f3e7e9 100%
-  );
+  background-image: url(./images/bg-album.jpg);
 
   color: var(--btn-color);
   padding-left: 40px;
   padding-right: 40px;
   font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 20px;
   padding-top: 13px;
   display: flex;
@@ -177,9 +158,9 @@ html {
 }
 
 .img-memories {
-  margin: 10px;
-  border: 10px solid;
-  border-color: whitesmoke;
+  margin: 15px;
+  border: 5px solid;
+  border-color: rgb(75, 68, 68);
 
   padding: 30px;
 
@@ -226,16 +207,10 @@ html {
 .btn-index-work {
   width: 100%;
 }
-main {
-  margin: 60px auto;
-  max-width: 900px;
-  font-size: medium;
-  text-align: center;
-  padding: 50px;
-}
+
 .whatever2 {
   width: 100vw;
-
+  height: 100vh;
   text-align: center;
   background-image: url(/images/Code_typing.png);
 
@@ -292,14 +267,7 @@ P {
   text-align: center;
   line-height: 27px;
 }
-.languages ul,
-.skills-tools ul {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600px;
-  list-style-type: none;
-}
 
-}
 .hexagon-container {
   font-family: "Oswald", sans-serif;
 }
@@ -308,6 +276,8 @@ P {
 }
 html .hexagon-container {
   font-size: 62.5%;
+  width: 100%;
+  height: 90vh;
 }
 body .hexagon {
   font-size: 1.5em;
@@ -806,7 +776,7 @@ body .hexagon {
   color: white;
   text-decoration: none;
 }
-.btn-view-cv{
+.btn-view-cv {
   color: var(--btn-color) !important;
   border: 1px solid var(--btn-color) !important;
   border-radius: 5%;
@@ -814,13 +784,12 @@ body .hexagon {
   margin-bottom: 5px;
   background-color: whitesmoke;
 }
-}
+
 .btn-download-cv {
-  background: var(--btn-color) !important;
+  background-color: var(--btn-color) !important;
   margin-top: 5%;
   box-shadow: var(--box-shadow) !important;
-  color: white!important;
-  
+  color: white !important;
 }
 
 footer p {
@@ -832,13 +801,30 @@ footer p {
   margin: 1px solid;
   padding: 15px;
 
-  color: var(--btn-color) !important;
-  border: 1px solid var(--btn-color) !important;
+  color: var(--secondary-color) !important;
+  border: 1px solid var(--secondary-color) !important;
   border-radius: 5%;
   padding-bottom: 20px;
   margin-bottom: 5px;
 }
+#projects h3 {
+  color: whitesmoke;
+  font-size: 17px;
 
+  padding: 5px;
+}
+
+.learn-more-memories {
+  text-decoration: none;
+  margin: 1px solid;
+  padding: 15px;
+
+  color: #35373a;
+  border: 1px solid #35373a !important;
+  border-radius: 5%;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
 .btn-view-projects {
   text-decoration: none;
   margin: 1px solid;
@@ -857,7 +843,7 @@ footer p {
 .hero .btn-projects:hover {
   background-color: #420062;
 }
-.app-description-about {
+.description-about-me {
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
@@ -871,10 +857,21 @@ footer p {
 }
 .app-description {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 15px;
+
   font-weight: 400;
   opacity: 0.9;
+  color: whitesmoke !important;
+  border-radius: 5%;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.app-description-gallery {
+  line-height: 1.5;
+  font-size: 17px;
 
+  font-weight: 450;
+  color: black !important;
   border-radius: 5%;
   padding-left: 20px;
   padding-right: 10px;
@@ -883,10 +880,20 @@ footer p {
   width: 50px;
   line-height: 10px;
 }
+.col h3 {
+  color: #abecd6;
+}
+
 footer .contact {
+  color: #abecd6;
   width: 470px;
   margin: 0 auto;
-  background: #f9f7fe;
+  background-image: linear-gradient(
+    -225deg,
+    #ff3cac 0%,
+    #562b7c 52%,
+    #2b86c5 100%
+  );
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 5%;
@@ -924,6 +931,12 @@ footer .my-email a {
   padding: 35px;
   text-align: center;
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left: 0.9rem;
+  }
+}
 @media (max-width: 950px) {
   .hero h1 {
     padding: 10px;
@@ -942,12 +955,32 @@ footer .my-email a {
     padding-bottom: 30px;
     font-family: "Poppins", sans-serif;
   }
-  
-  
-   
+
+  .description-about-me {
+    font-size: xx-small;
+    padding: 0%;
+    margin: 0;
+  }
+  .btn-view-cv {
+    font-size: 7px;
+    line-height: 10px;
+  }
+
   footer p {
     font-size: 13px;
     line-height: 15px;
+  }
+  #projects h3 {
+    color: whitesmoke;
+    font-size: 17px;
+
+    padding: 5px;
+  }
+
+  .react-icon {
+    padding-top: 5px;
+    width: 70px;
+    height: 50px;
   }
 
   .whatever h5 {
@@ -967,7 +1000,7 @@ footer .my-email a {
     box-shadow: var(--box-shadow) !important;
     color: white !important;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 15px;
     text-align: center;
   }
