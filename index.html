@@ -36,8 +36,7 @@
 
 
 
-
-    <title>Frontend developer - Emilia`s Portrfolio</title>
+    <title> Frontend developer - Emilia`s Portrfolio</title>
 </head>
 
 
@@ -74,32 +73,36 @@
                         </a>
                         <ul class="dropdown-menu text-center collapse" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>EN
+                                <a class="dropdown-item" href="#"><i class="united kingdom flag"
+                                        onclick="tinyi18n.setLang('en')"></i>EN
                                 </a>
                             </li>
 
 
 
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="germany flag"></i>GE</a>
+                            <!-- <li>
+                                <a class="dropdown-item" href="#"><i class="germany flag"
+                                        onclick="tinyi18n.setLang('ge')"></i>GE</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#"><i class="france flag"></i>FR</a>
-                            </li>
-
-
+                                <a class="dropdown-item " href="#"><i class="france flag "
+                                        onclick="tinyi18n.setLang('fr')"></i>FR</a>
+                            </li> -->
 
                         </ul>
                     </li>
                     <li class="nav-item">
 
-                        <a class="nav-link active " aria-current="page" href="index.html" title="Homepage">Home</a>
+                        <a class="nav-link active " aria-current="page" href="index.html" title="Homepage"
+                            data-translatekey="navbar-home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" title="About Emilia">About </a>
+                        <a class="nav-link" href="about.html" title="About Emilia"
+                            data-translatekey="navbar-about">About </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects" title="Emilia´s projects">Projects</a>
+                        <a class="nav-link" href="#projects" title="Emilia´s projects"
+                            data-translatekey="navbar-projects">Projects</a>
                     </li>
 
 
@@ -114,13 +117,14 @@
         <div style="position: absolute; z-index: 1; height: 100%; width: 100%;" id="particles-js"></div>
 
         <div class="me ">
-            <h1 id="myname"> Hello world!</h1>
-            <h2 class=" p-3 trnsjs">I'm Emilia</h2>
+            <h1 id="myname" data-translatekey="title"> Hello world!</h1>
+            <h2 class=" p-3 trnsjs " data-translatekey="myname">I'm Emilia</h2>
 
 
-            <h3 class="m-2 pt-3">jr. Front-end developer</h3>
+            <h3 class="m-2 pt-3" data-translatekey="description">jr. Front-end developer</h3>
             <div style="position: relative; z-index: 2;" class="navigation-link-index pt-3">
-                <a href="#about-me" title="Get started " class=" btn btn-projects p-3 mb-3 rounded ">Let´s
+                <a href="#about-me" title="Get started " class=" btn btn-projects p-3 mb-3 rounded "
+                    data-translatekey="getstartedbox">Let´s
                     get started</a>
                 <br>
                 <div class=" row  ">
@@ -166,18 +170,27 @@
 
             <div id="about-me" class="  pt-5 pb-4">
 
-                <h3 class="p-3"> A bit about me &</h3>
+                <h3 class="p-3" data-translatekey="title-about-me"> A bit about me &</h3>
                 <div class="row  ">
 
-                    <h1 class="text-center pt-2 pb-1"> my work </h1>
-                    <div class="text-center col d-none d-md-block ">
+                    <h1 class="text-center pt-2 pb-1" data-translatekey="title-amy-work"> my work </h1>
+                    <div class="text-center col d-none d-sm-block ">
                         <img src="/images/Emilia Picture.jpeg" class="picture img-fluid img-thumbnail rounded mt-5"
                             alt="picture_dev">
+                        <div>
+                            <p class="p-btn-view">
+                                <a href="/about.html" data-translatekey="my-cv"
+                                    class=" btn btn-view-cv float-center m-4 p-3 " title=" CV and certificates">
+                                    View CV & certifications</a>
+                            </p>
+
+                        </div>
                     </div>
                     <div class="text-center col  mt-4">
 
 
-                        <p class=" text-center p-4 mt-3 description-about-me"> Hi, I am Emilia 🖐<br />aspiring
+                        <p class=" text-center p-4 mt-3 description-about-me" data-translatekey="description-about-me">
+                            Hi, I am Emilia 🖐<br />
                             Frontend
                             developer using ReactJS 🎆 <br />
 
@@ -185,8 +198,7 @@
                             I have experience in building websites for small and medium sized
                             businesses. My formal education is in Educational Sciences & my prof.
                             background is
-                            in webDevelopment & design, IT
-                            solution
+                            in webDevelopment, UI/UX
                             support and
                             Project Management.
 
@@ -200,27 +212,21 @@
                             <br />
                             I’m experienced in HTML and CSS3, JavaScript, jQuery, ReactJS and SEO.
                             <br />
-                            I’ll fully project manage your brief from start to finish.
+                            I’ll fully manage your project from start to finish.
                             <br />Regular communication is really
                             important to me, so let’s keep in touch!
 
                             <a href="mailto:emtatu.collaborations@gmail.com" target="_blank" title="E-mail me"
-                                class=" btn btn-email-me float-center m-3 p-2 " title=" Contact Emilia">
+                                class=" btn btn-email-me float-center m-3 p-2 " data-translatekey="contact-me"
+                                title=" Contact Emilia">
                                 contact me</a>
 
 
 
 
-
                         </p>
-                        <div>
-                            <p>
-                                <a href="/about.html" class=" btn btn-view-cv float-center m-4 p-3 "
-                                    title=" CV and certificates">
-                                    View CV & certifications</a>
-                            </p>
 
-                        </div>
+
 
 
                     </div>
@@ -374,199 +380,11 @@
             <!-- Carousel wrapper -->
         </div>
     </div>
-    <div id="container-hex" class="hexagon-container d-none d-lg-block ">
-        <section class="intro">
-
-            <div class="intro-block">
-                <div class="centerfold-wrap">
-                    <div class="hex-master-wrap">
-                        <div class="hover-notify">Hover Me!</div>
-                        <div class="grid-1">
-                            <div class="hex-wrap frontend" data-title="FRONTEND" data-content="frontend-desc"
-                                data-color="#333333">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/front-end.png" /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex-wrap reactjs" data-title="ReactJS" data-content="reactjs-desc"
-                                data-color="#16A085">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/hex-reactjs-img.png" /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-2">
-                            <div class="hex-wrap html" data-title="HTML5" data-content="html-desc" data-color="#E34C26">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/hex-html5.png" /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex-wrap css" data-title="CSS3" data-content="css-desc" data-color="#0083de">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/hex-css3.png" /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex-wrap jquery" data-title="JAVASCRIPT" data-content="javascript-desc"
-                                data-color="#8cc84b">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/hex-js.png" /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-3">
-                            <div class="hex-wrap gui" data-title=" WebDesign" data-content="ui-desc"
-                                data-color="#2C3E52">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/hex-webdesign.jpg" /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex-wrap seo" data-title="SEO" data-content="seo-desc" data-color="#C0392B">
-                                <div class="hex-init"></div>
-                                <div class="hex-borders">
-                                    <div class="border-1"></div>
-                                    <div class="border-2"></div>
-                                    <div class="border-3"></div>
-                                </div>
-                                <div class="label"><img src="/images/hex-seo.png
-                                    " /></div>
-                                <div class="hexagon">
-                                    <div class="hex-inner-1">
-                                        <div class="hex-inner-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="code-display">
-                        <div class="code-description ">
-                            <div class="frontend-desc ">
-                                <p class="code-title "></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span>HTML, CSS, Javascript,
-                                    ReactJS</p>
-                                <p class="pt-3 text-start"><span>Tools</span>VS Code, NPM, GitHub </p>
-                                <p class="pt-3 text-start"><span>Hosting</span>Netlify & DeFi </p>
-
-                            </div>
-                            <div class="reactjs-desc">
-                                <p class="code-title"></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span> single-page-apps, ReactJS concepts,
-                                    Hooks, APIs
-                                </p>
-                                <p class="pt-3 text-start"><span>Tools</span>VS Code, NPM, GitHub </p>
-
-
-                            </div>
-                            <div class="html-desc">
-                                <p class="code-title"></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span>HTML5 (most recent)</p>
-                                <p class="pt-3 text-start"><span>Tools</span>VS Code, Netlify hosting & deployment,
-                                    GitHub </p>
-
-                            </div>
-                            <div class="css-desc">
-                                <p class="code-title"></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span>CSS3 (most recent), CSS variables
-                                </p>
-                                <p class="pt-3 text-start"><span>Tools</span>VS Code, MDBootstrap, Flexbox </p>
-
-                            </div>
-                            <div class="javascript-desc">
-                                <p class="code-title"></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span>Javascript, Jquery, ReactJS, NodeJS
-                                </p>
-                                <p class="pt-3 text-start"><span>Tools</span>VS Code, CodePen, APIs </p>
-
-                            </div>
-                            <div class="ui-desc">
-                                <p class="code-title"></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span>Responsive WebDesign, UI/UX design
-                                </p>
-                                <p class="pt-3 text-start"><span>Tools</span>VS Code, Console, MDBootstrap, Figma </p>
-
-                            </div>
-                            <div class="seo-desc">
-                                <p class="code-title"></p>
-
-                                <p class="pt-5 text-start "><span>Experience</span>Up-to-date SEO Practices & Google
-                                    analytics</p>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="hoverblock"></div>
-                </div> <!-- End Centerfold-Wrap -->
-            </div>
-
-        </section>
-    </div>
 
     <div class=" section1  ">
         <div class="container ">
             <div class=" text-center  ">
-                <h3 class="  mt-3 pt-3 pb-3 ">Gallery of memories</h3>
+
                 <h1 class="  p-3 app-description-gallery-s1 mt-3 mb-4 pb-3 ">The Album is completly device responsive
                     and search engine optimised (SEO)
                     <br> The main dev is
@@ -607,6 +425,10 @@
                                             class="img-memories d-sm-block img-fluid img-thumbnail rounded  mt-3"
                                             alt="ReactJS App" title="ReactJS App">
                                     </div>
+                                    <div class="btn-index-work pt-2 pb-3 mt-5">
+                                        <a href="#" class=" learn-more-memories text-md-end" title="View album">Learn
+                                            more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -618,10 +440,7 @@
                     </div>
                 </div>
 
-                <div class="btn-index-work pt-2 pb-3 mt-5">
-                    <a href="#" class=" learn-more-memories text-md-end" title="View album">Learn
-                        more</a>
-                </div>
+
             </div>
 
 
@@ -630,7 +449,7 @@
         </div>
 
     </div>
-    <div>
+    <div class="separate-footer">
 
         <div>
             <footer class=" pt-4 m-3">
@@ -709,6 +528,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
     <script src="/particule.js"></script>
+    <script src="/translate.json"></script>
+    <script src="/tinyi18n.js"></script>
     <script type="text/javascript" src="/index.js"></script>
 
 

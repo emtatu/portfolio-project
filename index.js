@@ -5,6 +5,9 @@ particlesJS.load('particles-js', '/particlesjs-config.json', function () {
 });
 
 
+
+tinyi18n.loadTranslations('translate.json');
+
 $(document).ready(function () {
     function hex_initial_animation() {
         $(".hex-wrap,.hover-notify").velocity("transition.expandIn", { stagger: 150 });

@@ -1,17 +1,100 @@
-{
-    strings : {
-        'id:myname': {
-            'de_DE' : 'Ick been emilia',
-            'fr_FR' : '',
-            'ro_RO' : 'Spanish translation here',
-            'en_GB' : 'British english translation here',
+{"default_language":"en", 
+	"languages": ["en", "ge", "fr"],
+    "translations": {
+        "navbar-home": {
+            "en": "Home",
+            "ge": "Home",
+            "fr": "Accueil"
         },
-        'id:myname': {
-            'de_DE' : 'Ick been emilia',
-            'fr_FR' : '',
-            'ro_RO' : 'Spanish translation here',
-            'en_GB' : 'British english translation here',
+        "navbar-about":{
+            "en": "About",
+            "ge": "Erfahrung ",
+            "fr": "Expérience professionnelle"
         },
-        
-    }
+        "navbar-projects":{
+            "en": "Projects",
+            "ge": "Projekte ",
+            "fr": "Projets"
+        },
+
+		"title": {
+			"en": "Hello World!",
+			"ge": "Hallo Welt!",
+            "fr": " Bonjour monde!"
+		},
+        "myname": {
+            "en": "I`m Emilia ",
+			"ge": "Ich bin Emilia ",
+            "fr": " Je suis Emilia"
+        },
+		"description": {
+			"en": "jr Front-end Developer",
+			"ge": "jr Front-end Developer",
+            "fr": "jr Front-end Développeuse"
+		},
+		"getstartedbox": {
+			"en": "Let`s get started",
+			"ge": "Los geht`s ",
+            "fr": " Allons-y"
+		},
+        "title-about-me": {
+			"en": "A bit about me &",
+			"ge": "Über mich & ",
+            "fr": " Sur moi & "
+		},
+        "title-my-work": {
+			"en": "my work",
+			"ge": "meine Arbeit ",
+            "fr": " mon travail"
+		},
+        "description-about-me": {
+			"en": "Hi, I am Emilia 🖐
+            Frontend
+            developer using ReactJS 🎆 
+            I have experience in building websites for small and medium sized
+            businesses. My formal education is in Educational Sciences & my prof.
+            background is
+            in webDevelopment, UI/UX
+            support and
+            Project Management. Whether you’re trying to win work, list your services or even create a whole
+            online store – I can help!
+            
+            I’m experienced in HTML and CSS3, JavaScript, jQuery, ReactJS and SEO.
+
+            I’ll fully manage your project from start to finish.
+            Regular communication is really
+            important to me, so let’s keep in touch!",
+
+
+
+			"ge": "Hallo, ich bin Emilia
+            Frontend-developer
+Ich habe Erfahrung in der Erstellung von Websites für kleine und mittelständische Unternehmen. Meine formale Ausbildung ist in Erziehungswissenschaften und mein beruflicher Hintergrund bezieht sich auf der Webentwicklung, UI/UX-Unterstützung und Projektmanagement.
+Egal, ob Sie versuchen, Aufträge zu gewinnen, Ihre Dienstleistungen aufzulisten oder sogar einen ganzen Online-Shop zu erstellen – ich kann Ihnen helfen!
+Ich habe Erfahrung in HTML und CSS3, JavaScript, jQuery, ReactJS und SEO.
+Ich werde Ihr Projekt von Anfang bis Ende vollständig managen.
+          Regelmäßige Kommunikation ist mir sehr wichtig, also bleiben wir in Kontakt! ",
+           
+          
+          "fr": " Salut, je suis Emilia 🖐
+            Développeur frontend utilisant ReactJS 🎆
+J'ai de l'expérience dans la création de sites Web pour les petites et moyennes entreprises. Mon éducation formelle est en sciences de l'éducation et mon parcours professionnel est en développement web, support UI/UX et gestion de projet.
+Que vous essayiez de gagner du travail, de répertorier vos services ou même de créer une boutique en ligne complète, je peux vous aider !
+Je suis expérimenté en HTML et CSS3, JavaScript, jQuery, ReactJS et SEO.
+Je gère entièrement votre projet du début à la fin.
+          Une communication régulière est vraiment importante pour moi, alors restons en contact !"
+		},
+        "contact-me": {
+			"en": "Contact me",
+			"ge": "Mein Kontakt ",
+            "fr": " Contactez moi"
+		},
+        "my-cv": {
+			"en": "View CV & certifications",
+			"ge": "Lebenslauf & Zertifizierungen ansehen ",
+            "fr": " Mon CV et certifications"
+		}
+	}
+    
+    
 }
