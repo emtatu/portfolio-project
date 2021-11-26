@@ -208,7 +208,6 @@ section {
   background-attachment: fixed;
 }
 .about-me-section {
-  width: 60%;
   padding-left: 10%;
   padding-right: 10%;
   align-items: center;
@@ -384,7 +383,7 @@ section {
   height: inherit;
   width: 100vw;
   text-align: center;
-  background-image: url(/images/background_online_cv_qy9w.png);
+  background-image: url(/images/img_tag_about_me.png);
 
   background-repeat: no-repeat;
   vertical-align: bottom;
@@ -708,19 +707,10 @@ P {
     font-size: 11px;
     width: 100px;
   }
-  .skills-section h4 {
-    font-size: medium;
-  }
-  .skills-col {
-    width: 100%;
-    align-items: center;
-  }
-  .skill-container {
-    width: 100%;
-  }
-  .randome-img {
+  .skills-section {
     display: none;
   }
+
   #projects h4 {
     font-size: 15px !important;
     font-weight: 300;
